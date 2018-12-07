@@ -37,7 +37,7 @@ begin
   process(clk, rst)
   begin
     if rst = '1' then
-      output <= (others => init);
+      output <= (others => 0);
     elsif (clk = '1' and clk'event) then
       if (en = '1') then
         output <= input;
